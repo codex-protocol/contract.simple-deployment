@@ -1,4 +1,4 @@
-var SimpleToken = artifacts.require('./SimpleToken.sol');
+const SimpleToken = artifacts.require('./SimpleToken.sol');
 
 module.exports = async function (deployer, network, accounts) {
   let newOwner;
