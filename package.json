@@ -1,0 +1,47 @@
+{
+  "name": "contract.simple-deployment",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "migrate": "truffle migrate --network ganache",
+    "migrate:reset": "rm -rf build && truffle migrate --reset --network ganache",
+    "coverage": "./node_modules/.bin/solidity-coverage",
+    "test": "truffle test --network ganache",
+    "lint": "npm run lint:js && npm run lint:sol",
+    "lint:js": "eslint .",
+    "lint:sol": "solium -d .",
+    "compile": "truffle compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codex-protocol/contract.simple-deployment"
+  },
+  "keywords": [
+    "codex"
+  ],
+  "author": "Codex Protocol <contact@codexprotocol.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codex-protocol/simple-deployment/issues"
+  },
+  "homepage": "https://github.com/codex-protocol/contract.simple-deployment",
+  "dependencies": {
+    "zeppelin-solidity": "^1.8.0"
+  },
+  "devDependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "ethereumjs-util": "^5.1.5",
+    "solidity-coverage": "^0.4.15",
+    "solium": "^1.1.6",
+    "truffle": "^4.1.6"
+  }
+}
