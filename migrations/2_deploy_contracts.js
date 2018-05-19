@@ -1,5 +1,5 @@
-const SimpleToken = artifacts.require('./SimpleToken.sol');
+const SimpleToken = artifacts.require('./SimpleToken.sol')
 
 module.exports = function (deployer) {
-  deployer.deploy(SimpleToken);
-};
+  deployer.deploy(SimpleToken)
+}
